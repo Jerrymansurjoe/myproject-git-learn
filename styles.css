@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    height: 60px;
+    gap: 1rem;
+    box-shadow: 0 4px 8px 1px #0003;
+}
+
+nav .logo {
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+nav .logo::first-letter {
+    color: #ff4500;
+    font-size: 35px;
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+}
+
+nav span {
+    color: #ff4500;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul li a {
+    padding: 15px;
+    text-decoration: none;
+    font-size: 17px;
+    letter-spacing: 1px;
+    color: #000;
+    font-family: "Madimi One", sans-serif;
+    text-transform: capitalize;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .6s;
+}
+
+nav ul li a::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #ff4500;
+    bottom: 10px;
+    transition: .4s;
+}
+
+nav ul li a:hover::before {
+    width: 70%;
+}
+
+nav .btn1 {
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-family: "Madimi One", sans-serif;
+    padding: 4px 25px;
+    border: none;
+    outline: none;
+    background-color: #ff4500;
+    color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 8px #0005;
+    transition: .3s linear;
+}
+
+nav .btn1:hover {
+    color: #000;
+    background-color: transparent;
+    outline: none;
+    border: 1px solid #ff4500;
+}
+
+.container {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
+
+.cards {
+    display: flex;
+    align-items: center;
+}
+
+.testimonial-card {
+    width: 300px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px;
+    box-shadow: 0 4px 8px 0 #0006;
+}
+
+.testimonial-body {
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.testimonial-body p {
+    letter-spacing: 1px;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.testimonial-footer {
+    display: flex;
+    text-align: center;
+}
+.testimonial-footer img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.testimonial-footer h3 {
+    margin-top: 15px;
+    color: #333;
+}
